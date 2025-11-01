@@ -10,13 +10,16 @@ ___
 #### Homepage:
 ![Homepage](./public/system-screenshots/Homepage.png)
 <br>
+<br>
 
 #### Features:
 ![Features](./public/system-screenshots/Features.png)
 <br>
+<br>
 
 #### About:
 ![About](./public/system-screenshots/About.png)
+<br>
 <br>
 
 #### Curriculum Navigator:
@@ -26,15 +29,19 @@ ___
 _Graphical visualization of all topic dependencies a certain course topic has. In this graph, the selected topic is "Introduction to object oriented design" under "Object Oriented Programming._
 <br>
 <br>
+<br>
 
 ![Graph-Zoomed](./public/system-screenshots/Graph-Zoomed.PNG)
 
 _Zoomed in view of graph visualization_
+<br>
+<br>
 
 #### Learning Order (from graph):
 ![Learning-Order](./public/system-screenshots/Learning-Order.png)
 
 _Enlists all topics that the specified course topic is dependent on._
+<br>
 <br>
 
 #### Learning Order (Limited to selected course only):
@@ -42,13 +49,17 @@ _Enlists all topics that the specified course topic is dependent on._
 
 _The list of topics is narrowed down to only the topics that is directly under the specified course when the "Limit to selected course only" option is toggled._
 <br>
+<br>
 
 #### Help UI:
 ![Help-UI](./public/system-screenshots/Help-UI.png)
 <br>
+<br>
 
 #### Team Members:
 ![Team-Members](./public/system-screenshots/Team.png)
+<br>
+<br>
 
 ___
 
@@ -74,6 +85,7 @@ In addition, the project also used a pre-existing curriculum based off of the re
 CS2023: https://csed.acm.org/
 
 HEC Computing Disciplines 2023: https://nceac.org.pk/Documents/Curriculums/BS%20Curriculm%20Computing%20Disciplines-2023.pdf
+<br>
 <br>
 
 #### Computer Science Topics Collected:
