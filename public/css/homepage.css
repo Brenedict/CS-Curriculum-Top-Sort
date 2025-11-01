@@ -66,6 +66,10 @@ body {
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -835,12 +839,14 @@ body {
 }
 
 .sidebar {
+  /* display: none; */
   width: 380px;
   background: white;
   border-right: 1px solid var(--gray-200);
   padding: var(--space-xl);
-  overflow-y: auto;
+  /* overflow-y: auto; */
   box-shadow: var(--shadow-sm);
+  max-height: 100vh;
 }
 
 .sidebar-header {
@@ -906,6 +912,12 @@ body {
 
 .search-btn:hover {
   transform: translateY(-50%) scale(1.05);
+}
+
+.topics-container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .topic-list {

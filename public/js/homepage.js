@@ -94,6 +94,12 @@ function showHelp() {
   document.getElementById("help-modal").style.display = "block";
 }
 
+const close_modal = document.querySelector(".close-modal");
+
+close_modal.addEventListener("click", () => {
+  closeHelp();
+})
+
 function closeHelp() {
   document.getElementById("help-modal").style.display = "none";
 }
@@ -122,13 +128,50 @@ function renderAllTopics(topics) {
 
   let html = "";
 
-  topics.forEach((subjects, course) => {
-    html += `<div class="subject-header">${course}</div>`;
-
+  let i = 0;
+  topics.forEach((subjects, course_code) => {
+    let course_name;
+    
+    switch(course_code) {
+      case "PF":
+        course_name = "Programming Fundamentals";
+        break;
+      case "DS":
+        course_name = "Discrete Structures";
+        break;
+      case "OOP":
+        course_name = "Object Oriented Programming";
+        break;
+      case "DBS":
+        course_name = "Database Systems";
+        break;
+      case "DLD":
+        course_name = "Digital Logic Design";
+        break;
+      case "DSA":
+        course_name = "Data Structures";
+        break;
+      case "CN":
+        course_name = "Computer Networks";
+        break;
+      case "OS":
+        course_name = "Operating Systems";
+        break;
+      case "AoA":
+        course_name = "Analysis of Algorithms";
+        break;
+      default:
+        course_name = course_code;
+        break;
+    }
+      
+    console.log(++i + "" + course_code + " => " + course_name)
+    html += `<div class="subject-header">${course_name}</div>`;
+    
     subjects.forEach((topic, index) => {
-      const topicId = `${course}-${index}`;
+      const topicId = `${course_code}-${index}`;
       html += `
-            <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}" data-topic="[${course}] ${topic}">
+            <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}" data-topic="[${course_code}] ${topic}">
               ${topic}
             </div>
           `;
